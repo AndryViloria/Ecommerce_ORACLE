@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/agregarproductos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Open+Sans&family=Permanent+Marker&family=Raleway:wght@100;300;400&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Splash&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2666f7d089.js" crossorigin="anonymous"></script>
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header id="header">
+        <div class="logo">
+            <img src="assets/img/Logo completo.png" alt="Logo Alura Geek">
+        </div>
+
+        <div class="search_login">
+            <div class="search">
+                <input class="search" type="text" placeholder="¿Que deseas buscar?">
+                <a href="" class="logo_search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+
+        <div class="btn_menu_admin">
+            <a class="btn_menu_administrador" href="index.html">Menú Administrador</a>
+        </div>
+
+    </header>
+
+    <!-- AGREGAR PRODUCTOS -->
+    <section id="agregar_productos">
+
+        <h3>Agregar nuevo producto</h3>
+
+        <form id="formulario_nuevo_producto">
+            <div class="url">
+                <label class="label" for="#">URL de imagen</label>
+                <input class="input_url" id="URL" type="text" name="URL"
+                    placeholder="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAA.png" required="" data-tipo="URL"
+                    maxlength="">
+            </div>
+
+            <div class="categoria">
+                <label class="label" for="#">Categoría</label>
+                <input class="input_categoria" id="categoria" type="text" name="categoria" placeholder="Consola"
+                    required="" data-tipo="categoria" maxlength="">
+            </div>
+
+            <div class="nombre_producto">
+                <label class="label" for="#">Nombre del producto</label>
+                <input class="input_producto" id="producto" type="text" name="producto" placeholder="Producto XYZ"
+                    required="" data-tipo="producto" maxlength="">
+            </div>
+
+            <div class="precio">
+                <label class="label" for="#">Precio del producto</label>
+                <input class="input_precio" id="precio" type="text" name="precio" placeholder="$60.00" required=""
+                    data-tipo="precio" maxlength="">
+            </div>
+
+            <div class="descripcion_texarea">
+                <textarea class="textarea_descripcion" rows="5" cols="40" id="descripcion" name="descripcion"
+                    placeholder="Descripcion del producto" required="" data-tipo="descripcion"
+                    maxlength="50"></textarea>
+            </div>
+
+            <div class="btn">
+                <button type="submit" class="btn_agregar_prod">Agregar producto</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- INFORMACION -->
+    <section id="informacion">
+
+        <div class="logo">
+            <img src="assets/img/Logo completo.png" alt="Logo Alura Geek">
+        </div>
+
+        <div class="texto_informacion">
+            <p>Quienes somos</p>
+            <p>Política de privacidad</p>
+            <p>Programa de fidelidad</p>
+            <p>Nuestras Tiendas</p>
+            <p>Quiero ser franquiciado</p>
+            <p>Anúncie aquí</p>
+        </div>
+
+        <form class="campos_informacion" id="form">
+            <label class="label_informacion">Hable con nosotros</label>
+            <input class="input_informacion" id="name" name="nombre" type="text" placeholder="Nombre" required></input>
+            <textarea class="textarea_informacion" id="textarea" placeholder="Escribe tu mensaje"></textarea>
+            <button class="btn_informacion" type="submit" value="Enviar mensaje">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>ORACLE - Challenge # 4: Ecommerce. Elaborado por Andry Viloria. 2022.</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

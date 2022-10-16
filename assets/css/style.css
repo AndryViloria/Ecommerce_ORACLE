@@ -1,0 +1,519 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container {
+    max-width: 100%;
+}
+
+/* HEADER */
+#header {
+    background: #FFFFFF;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search {
+    background: #F5F5F5;
+    border: none;
+    border-radius: 20px;
+    color: #A2A2A2;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    width: 393px;
+    height: 40px;
+}
+
+.search_input {
+    border: none;
+    background: #F5F5F5;
+    width: 50%;
+    font-size: 14px;
+}
+
+.fa-solid {
+    color: #A2A2A2;
+}
+
+.search_login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn_login {
+    color: #2A7AE4;
+    cursor: pointer;
+    border: 1px solid #2A7AE4;
+    background: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 16px 70px;
+}
+
+/* BANNER */
+#banner {
+    background-image: url(https://enrique0202.github.io/E-COMMERCE/img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    height: 352px;
+}
+
+.texto_banner {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 90px;
+    margin-left: 85px;
+    gap: 10px;
+}
+
+.texto_uno {
+    font-size: 52px;
+}
+
+.texto_dos {
+    font-size: 22px;
+}
+
+.btn_banner {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    width: 30%;
+}
+
+/* MAIN */
+#main {
+    background: #F5F5F5;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h2 {
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.btn_ver_todo {
+    display: inline-block;
+    color: #2A7AE4;
+    margin-left: 890px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.fa-arrow-right {
+    color: #2A7AE4;
+}
+
+.card-group {
+    display: flex;
+    flex-direction: row;
+}
+
+#card {
+    margin: 5px;
+}
+
+.card-img-top {
+    width: 176px;
+    height: 174px;
+}
+
+.card-title {
+    font-size: 14px;
+    color: #464646;
+    margin-top: 8px;
+}
+
+.card-text-precio {
+    color: #464646;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.card-text-verProducto {
+    text-decoration: none;
+    color: #2A7AE4;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#cards_star_wars {
+    padding-top: 40px;
+}
+
+#cards_diversos {
+    padding-top: 50px;
+}
+
+#cards_consolas {
+    padding-top: 50px;
+}
+
+/* INFORMACION */
+#informacion {
+    background: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.texto_informacion {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.campos_informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label_informacion {
+    font-weight: bold;
+}
+
+.input_informacion {
+    width: 560px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.textarea_informacion {
+    border: none;
+    width: 560px;
+    height: 82px;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+::placeholder {
+    color: #A2A2A2;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.btn_informacion {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* MEDIA QUERY */
+/* TABLET */
+@media (max-width:768px) {
+    #header {
+        border: none;
+        gap: 10px;
+        padding: 16px 32px;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .search {
+        font-size: 12px;
+        padding: 8px 16px;
+        gap: 8px;
+        width: 272px;
+        height: 40px;
+    }
+
+    .fa-solidfa-magnifying-glass {
+        display: flex;
+    }
+
+    .btn_login {
+        font-size: 13px;
+        padding: 16px 70px;
+        width: 360px;
+        height: 72px;
+    }
+
+    .texto_banner {
+        gap: 5px;
+        margin: 20px;
+    }
+
+    .btn_banner {
+        font-size: 14px;
+    }
+
+    #main {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h2 {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .btn_ver_todo {
+        display: inline-block;
+        margin-left: 475px;
+        font-size: 14px;
+    }
+
+    .card-img-top {
+        width: 164px;
+        height: 174px;
+    }
+
+    .card_5,
+    .card_6 {
+        display: none;
+    }
+
+    #cards_star_wars {
+        padding-top: 10px;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text-precio {
+        font-size: 14px;
+    }
+
+    #informacion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 16px;
+        height: 364px;
+    }
+
+    .texto_informacion {
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .campos_informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input_informacion {
+        width: 434px;
+    }
+
+    .textarea_informacion {
+        width: 434px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .btn_informacion {
+        padding: 10px;
+        width: 30%;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+/* MOBIL */
+@media (max-width:480px) {
+    #header {
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search {
+        background: #FFFFFF;
+        width: 0px;
+        height: 0px;
+    }
+
+    .search_login {
+        flex-direction: row-reverse;
+    }
+
+    .search_input {
+        display: none;
+    }
+
+    .btn_login {
+        font-size: 12px;
+        width: 20px;
+        height: 16px;
+        padding: 10px 30px;
+    }
+
+    .fa-solidfa-magnifying-glass {
+        width: 17px;
+        height: 17px;
+    }
+
+    #banner {
+        height: 192px;
+    }
+
+    .texto_banner {
+        margin-bottom: 30px;
+    }
+
+    .texto_uno {
+        font-size: 22px;
+    }
+
+    .texto_dos {
+        font-size: 14px;
+    }
+
+    .btn_banner {
+        font-size: 13px;
+        width: 100px;
+        height: 32px;
+    }
+
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .card-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 42px;
+
+    }
+
+    h2 {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .btn_ver_todo {
+        display: inline-block;
+        margin-left: 142px;
+        font-size: 12px;
+    }
+
+    .card-img-top {
+        width: 156px;
+        height: 174px;
+    }
+
+    .card_5,
+    .card_6 {
+        display: none;
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-text-precio {
+        font-size: 14px;
+    }
+
+    #informacion {
+        display: flex;
+        flex-direction: column;
+        height: 553px;
+        text-align: center;
+    }
+
+    .label_informacion {
+        text-align: start;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .texto_informacion {
+        line-height: 2;
+        font-size: 13px;
+    }
+
+    .campos_informacion {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input_informacion {
+        width: 338px;
+        height: 56px;
+    }
+
+    .textarea_informacion {
+        width: 338px;
+        height: 82px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .btn_informacion {
+        width: 30%;
+        font-size: 11px;
+        width: 110px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+        height: 90px;
+    }
+}

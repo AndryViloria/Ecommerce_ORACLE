@@ -1,0 +1,322 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 32px 70px;
+    gap: 45px;
+}
+
+.search {
+    background: #F5F5F5;
+    border: none;
+    border-radius: 20px;
+    color: #A2A2A2;
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 393px;
+    height: 40px;
+}
+
+.search_input {
+    border: none;
+    background: #F5F5F5;
+    width: 50%;
+    font-size: 14px;
+}
+
+.fa-solid {
+    color: #A2A2A2;
+}
+
+.btn_login {
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    background: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 16px 70px;
+    cursor: pointer;
+}
+
+#iniciar_sesion {
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 90px;
+}
+
+#iniciar_sesion h3 {
+    margin-bottom: 20px;
+}
+
+.campos_iniciar_sesion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input_email {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 423px;
+    height: 63.13px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.input_contraseña {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 423px;
+    height: 63.13px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.btn_entrar {
+    background: #2A7AE4;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    text-decoration: none;
+    width: 423px;
+    height: 63.13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INFORMACION */
+#informacion {
+    background: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.texto_informacion {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.campos_informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label_informacion {
+    font-weight: bold;
+}
+
+.input_informacion {
+    width: 560px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.textarea_informacion {
+    border: none;
+    width: 560px;
+    height: 82px;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+::placeholder {
+    color: #A2A2A2;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.btn_informacion {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102px;
+    background: #FFFFFF;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.warnigs {
+    text-align: center;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+
+/* MEDIA QUERY */
+/* TABLET */
+@media (max-width:768px) {
+    header {
+        height: 72px;
+    }
+
+    .btn_entrar {
+        margin-left: 110px;
+        font-size: 15px;
+        padding: 10px;
+        width: 50%;
+        height: 30%;
+
+    }
+
+    #informacion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 16px;
+        /* width: 768px; */
+        height: 364px;
+    }
+
+    .texto_informacion {
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .campos_informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input_informacion {
+        width: 350px;
+        height: 56px;
+    }
+
+    .textarea_informacion {
+        width: 350px;
+        height: 82px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .btn_informacion {
+        padding: 10px;
+        width: 40%;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+/* MOBIL */
+@media (max-width:480px) {
+    header {
+        height: 72px;
+    }
+
+    .search {
+        background: #FFFFFF;
+        width: 0px;
+        height: 0px;
+        margin: 50px;
+    }
+
+    .search_input {
+        display: none;
+    }
+
+    .logo_search {
+        margin: 30px;
+    }
+
+    .btn_entrar {
+        margin-left: 120px;
+        font-size: 14px;
+        padding: 10px;
+        width: 40%;
+        height: 30%;
+
+    }
+
+    #informacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 556px;
+        justify-items: center;
+    }
+
+    .label_informacion {
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .texto_informacion {
+        line-height: 1.5;
+        font-size: 14px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .campos_informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input_informacion {
+        width: 328px;
+        height: 56px;
+    }
+
+    .textarea_informacion {
+        width: 328px;
+        height: 82px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .btn_informacion {
+        width: 30%;
+        font-size: 11px;
+        width: 110px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

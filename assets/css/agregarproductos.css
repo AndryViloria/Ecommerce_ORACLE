@@ -1,0 +1,394 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#header {
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 32px 60px;
+    gap: 10px;
+}
+
+.search {
+    background: #F5F5F5;
+    border: none;
+    border-radius: 20px;
+    color: #A2A2A2;
+    display: flex;
+    font-size: 14px;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 8px;
+    width: 393px;
+    height: 40px;
+}
+
+.fa-solid {
+    color: #A2A2A2;
+}
+
+.btn_menu_administrador {
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    background: #FFFFFF;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 16px 70px;
+    margin-left: 212px;
+}
+
+#agregar_productos {
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    gap: 10px;
+    padding: 70px;
+
+}
+
+#agregar_productos h3 {
+    text-align: start;
+}
+
+#formulario_nuevo_producto {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label {
+    margin: 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.input_url {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 559px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.input_categoria {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 559px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.input_producto {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 559px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.input_precio {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 559px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.textarea_descripcion {
+    background: #FFFFFF;
+    border-radius: 4px;
+    width: 559px;
+    height: 82px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+    margin-top: 30px;
+}
+
+.btn_agregar_prod {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    width: 559px;
+    height: 51px;
+}
+
+/* INFORMACION */
+#informacion {
+    background: #EAF2FD;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
+    font-size: 16px;
+}
+
+.texto_informacion {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.campos_informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.label_informacion {
+    font-weight: bold;
+}
+
+.input_informacion {
+    width: 560px;
+    height: 56px;
+    border: none;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+.textarea_informacion {
+    border: none;
+    width: 560px;
+    height: 82px;
+    border-bottom: 2px solid #C8C8C8;
+}
+
+::placeholder {
+    color: #A2A2A2;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.btn_informacion {
+    background: #2A7AE4;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 102px;
+    background: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* MEDIA QUERY */
+/* TABLET */
+@media (max-width:768px) {
+    #header {
+        padding: 32px 50px;
+    }
+
+    .btn_menu_administrador {
+        font-size: 12px;
+        padding: 13px 8px;
+        margin-left: 5px;
+    }
+
+    .search {
+        padding: 5px 10px;
+        width: 300px;
+    }
+
+    .input_url {
+        width: 704px;
+    }
+
+    .input_categoria {
+        width: 704px;
+    }
+
+    .input_producto {
+        width: 704px;
+    }
+
+    .input_precio {
+        width: 704px;
+    }
+
+    .textarea_descripcion {
+        width: 704px;
+    }
+
+    .btn_agregar_prod {
+        font-size: 16px;
+        width: 704px;
+        height: 51px;
+    }
+
+    #informacion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-size: 16px;
+        height: 364px;
+    }
+
+    .texto_informacion {
+        line-height: 2;
+        font-size: 14px;
+    }
+
+    .campos_informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .input_informacion {
+        width: 434px;
+        height: 56px;
+    }
+
+    .textarea_informacion {
+        width: 434px;
+        height: 82px;
+    }
+
+    ::placeholder {
+        font-size: 14px;
+    }
+
+    .btn_informacion {
+        padding: 10px;
+        width: 40%;
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 15px;
+    }
+}
+
+/* MOBIL */
+@media (max-width:480px) {
+    #header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search {
+        background: #FFFFFF;
+        width: 0px;
+        height: 0px;
+    }
+
+    .search_login {
+        flex-direction: row-reverse;
+    }
+
+    .fa-solidfa-magnifying-glass {
+        width: 17px;
+        height: 17px;
+    }
+
+    .btn_menu_administrador {
+        font-size: 12px;
+        padding: 13px 8px;
+    }
+
+    .input_url {
+        width: 328px;
+    }
+
+    .input_categoria {
+        width: 328px;
+    }
+
+    .input_producto {
+        width: 328px;
+    }
+
+    .input_precio {
+        width: 328px;
+    }
+
+    .textarea_descripcion {
+        width: 328px;
+    }
+
+    .btn_agregar_prod {
+        font-size: 16px;
+        width: 328px;
+        height: 51px;
+    }
+
+    #informacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 556px;
+        justify-items: center;
+    }
+
+    .label_informacion {
+        text-align: start;
+        font-size: 15px;
+    }
+
+    .texto_informacion {
+        line-height: 1.5;
+        font-size: 14px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .campos_informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .input_informacion {
+        width: 328px;
+        height: 56px;
+    }
+
+    .textarea_informacion {
+        width: 328px;
+        height: 82px;
+    }
+
+    ::placeholder {
+        font-size: 13px;
+    }
+
+    .btn_informacion {
+        width: 30%;
+        font-size: 11px;
+        width: 110px;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}

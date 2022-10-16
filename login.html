@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Open+Sans&family=Permanent+Marker&family=Raleway:wght@100;300;400&family=Roboto:wght@300&family=Rubik+Moonrocks&family=Splash&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2666f7d089.js" crossorigin="anonymous"></script>
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <!-- ENCABEZADO -->
+    <header id="header">
+        <div class="logo">
+            <img src="assets/img/Logo completo.png" alt="Logo Alura Geek">
+        </div>
+
+        <div class="search_login">
+            <div class="search">
+                <input class="search_input" type="text" placeholder="¿Que deseas buscar?">
+                <a href="#" class="logo_search"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- INICIAR SESION -->
+    <div id="iniciar_sesion">
+        <h3>Iniciar Sesión</h3>
+
+        <form class="campos_iniciar_sesion" id="formulario" action="#">
+            <div>
+                <input class="input_email form-input" name="correo" id="correo" autocomplete="off" type="email"
+                    placeholder="Escriba su correo electrónico" data-tipo="email">
+            </div>
+            <div>
+                <input class="input_contraseña form-input" name="password" id="password" autocomplete="off"
+                    type="password" placeholder="Escriba su contraseña" data-tipo="password">
+            </div>
+
+            <div>
+                <button class="btn_entrar" id="btn_iniciar_sesion" href="#" type="submit">Entrar</button>
+                <p class="warnigs" id="warnigs"></p>
+            </div>
+        </form>
+    </div>
+
+    <!-- INFORMACION -->
+    <section id="informacion">
+        <div class="logo_informacion">
+            <img src="assets/img/Logo completo.png" alt="Logo Alura Geek">
+        </div>
+
+        <div class="texto_informacion">
+            <p>Quienes somos</p>
+            <p>Política de privacidad</p>
+            <p>Programa de fidelidad</p>
+            <p>Nuestras Tiendas</p>
+            <p>Quiero ser franquiciado</p>
+            <p>Anúncie aquí</p>
+        </div>
+
+        <form class="campos_informacion" id="form">
+            <label class="label_informacion">Hable con nosotros</label>
+            <input class="input_informacion" id="name" name="nombre" type="text" placeholder="Nombre" required></input>
+            <textarea class="textarea_informacion" id="textarea" placeholder="Escribe tu mensaje"></textarea>
+            <button class="btn_informacion" type="submit" value="Enviar mensaje">Enviar mensaje</button>
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>ORACLE - Challenge # 4: Ecommerce. Elaborado por Andry Viloria. 2022.</p>
+    </footer>
+
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
